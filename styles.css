@@ -29,7 +29,7 @@
 .bank-details {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .bank-details:before {
@@ -64,7 +64,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
+    padding: 5px 2%;
 }
 
 .logo-container {
@@ -73,7 +73,7 @@
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
 }
 
@@ -90,18 +90,18 @@
 
 .contact-icon {
     color: #1e88e5;
-    font-size: 24px;
+    font-size: 40px;
 }
 
 .contact-details h4 {
     color: #333;
-    font-size: 14px;
-    margin-bottom: 3px;
+    font-size: 24px;
+    margin-bottom: 1px;
 }
 
 .contact-details p {
     color: #666;
-    font-size: 13px;
+    font-size: 18px;
 }
 
 /* Main Navbar */
@@ -156,6 +156,15 @@
         padding: 10px 15px;
     }
 
+    .bank-details{
+        display: none;
+    }
+    .logo {
+        max-width: 80px;
+        height: auto;
+        margin: 0px;
+    }
+
     .top-bar-left {
         font-size: 14px;
     }
@@ -175,7 +184,6 @@
     }
 
     .logo-container {
-        margin-bottom: 10px;
         text-align: center;
     }
 
@@ -312,13 +320,17 @@ main {
         font-size: 1.8em; /* Smaller heading for mobile */
     }
 
+    .bank-details{
+        display: none;
+    }
+
     .work-summary h2 {
         font-size: 1.1em;
     }
 
     .box {
         width: 100%; /* Stack boxes vertically on small screens */
-        margin-bottom: 15px; /* Space between stacked boxes */
+        margin-bottom: 5px; /* Space between stacked boxes */
     }
 
     .box p {
@@ -349,7 +361,7 @@ body {
     text-align: center;
     flex: 1;
     min-width: 200px; /* Ensures responsiveness */
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -405,7 +417,7 @@ p {
 
     .achievement {
         flex: 1 1 100%; /* Full width on mobile */
-        margin-bottom: 20px; /* Space between stacked achievements */
+        margin-bottom: 1px; /* Space between stacked achievements */
     }
 
     .achievement i {
@@ -925,13 +937,25 @@ p {
     }
 }
 footer {
-    background-color:rgb(79, 41, 41);
+    background-color:black;
     padding: 20px;
     border-top: 1px solid #e7e7e7;
     text-align: center;
     color: white;
 }
-
+.footer-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Ensures vertical alignment */
+    align-items: flex-start; /* Aligns text to the left */
+}
+.footer-menu h2 {
+    font-size: 20px;
+    color: white;
+    margin-left: 60px;
+}
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -951,36 +975,64 @@ footer {
 
 .footer-logo p {
     margin: 10px 0;
-    font-size: 10px;
+    font-size: 20px;
+    color : white;
+   
 }
 
 .social-icons a img {
-    width: 24px;
+    width: 30px;
     margin: 0 5px;
 }
-
+.footer-menu li {
+    margin: 5px 0;
+    width: 100%; /* Ensures full width */
+}
 .footer-menu ul {
-    list-style-type: none;
+    list-style-type :none;
     padding: 0;
+    display: block;
 }
 
 .footer-menu ul li {
+    list-style-type :none;
     margin: 5px 0;
+    display: block;
+    margin-left: 60px;;
 }
-
-.footer-menu ul li a {
+.footer-menu li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    font-size: 17px;
+    display: block; /* Ensures each item is in a new line */
+    text-align: left; /* Aligns text properly */
 }
-
+.footer-menu ul li a {
+    text-decoration:none;
+    color: #fff;
+    font-size: 17px;
+    display: block;
+}
+.footer-posts p{
+    margin: 10px 0;
+    font-size: 17px;
+    color : white;
+} 
 .footer-contact a {
-    color: #000;
+    color: #ffffff;
+    
+}
+.footer-contact p {
+    margin: 10px 0;
+    font-size: 17px;
+    color : white;
 }
 
-.footer-bottom {
+.footer-bottom p {
     margin-top: 20px;
     padding-top: 10px;
     border-top: 1px solid #e7e7e7;
+    color: white
 }
 
 @media (max-width: 900px) {
@@ -996,6 +1048,7 @@ footer {
     .footer-menu, .footer-posts, .footer-contact {
         text-align: center;
         margin: 20px 0;
+        color: white;
     }
 }
 
